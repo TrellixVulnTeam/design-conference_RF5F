@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Helvetica Light';
+    src: url(../assets/fonts/helvetica-light.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Helvetica Black';
+    src: url(../assets/fonts/helvetica-black.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Helvetica Medium';
+    src: url(../assets/fonts/helvetica-medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: 'Helvetica Ultralight';
+    src: url(../assets/fonts/helvetica-ultralight.otf) format("opentype");
+}
