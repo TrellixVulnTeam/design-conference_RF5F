@@ -43,6 +43,54 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/assets/img/earn-picture.png'),
                     to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/slider-img1.png'),
+                    to: path.resolve(__dirname, 'dist'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/slider-img2.png'),
+                    to: path.resolve(__dirname, 'dist'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/slider-img3.png'),
+                    to: path.resolve(__dirname, 'dist'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/slider-img4.png'),
+                    to: path.resolve(__dirname, 'dist'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/programm-bg.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/join-img.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img1.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img2.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img3.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img4.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img5.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/gallery-img6.png'),
+                    to: path.resolve(__dirname, 'dist')
                 }
             ]
         })
@@ -66,7 +114,7 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
             },
             {
-                test: /\.s[ac]ss$/,
+                test: /\.scss$/,
                 use: ['css-loader', 'sass-loader']
             },
         ]
