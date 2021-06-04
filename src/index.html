@@ -12,19 +12,19 @@
             <div class="welcome__menu">
                 <div class="welcome__container">
                     <img src="logo.svg" alt="logo" class="menu__logo">
-                    <a href="" class="ancor menu__ancor">о конференции</a>
-                    <a href="" class="ancor menu__ancor">спикеры</a>
-                    <a href="" class="ancor menu__ancor">программа</a>
-                    <a href="" class="ancor menu__ancor">фотогалерея</a>
-                    <a href="" class="ancor menu__ancor">организаторы</a>  
+                    <a href="#about" class="ancor menu__ancor white-text">о конференции</a>
+                    <a href="#speakers" class="ancor menu__ancor white-text">спикеры</a>
+                    <a href="#programm" class="ancor menu__ancor white-text">программа</a>
+                    <a href="#gallery" class="ancor menu__ancor white-text">фотогалерея</a>
+                    <a href="" class="ancor menu__ancor white-text">организаторы</a>  
                 </div>
-                <a href="" class="ancor menu__ancor ancor-border">принять участие</a>
+                <a href="" class="ancor menu__ancor ancor-border white-text">принять участие</a>
             </div>
             <div class="welcome__event">
                 <h2 class="event__header event__red-header">дизайн</h2>
                 <h2 class="event__header">конференция</h2>
                 <p class="event__describtion">Главное событие в дизайне и архитектуре</p>
-                <a href="" class="ancor event__ancor ancor-border">принять участие</a>
+                <a href="" class="ancor event__ancor ancor-border white-text">принять участие</a>
                 <div class="event__info">
                     <div class="container">
                         <p class="info__date">7-9 апреля 2019</p>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__rectangle">
         </div>
         <div class="about__experience">
@@ -74,10 +74,10 @@
             </div>
         </div>
     </section>
-    <section class="speakers">
+    <section id="speakers" class="speakers">
 
     </section>
-    <section class="programm">
+    <section id="programm" class="programm">
         <div class="programm__filter filter-70op">
             <div class="programm__rectangle">
                 <h2 class="programm__header">програм<strong class="black-text">м</strong>а</h2>
@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section id="gallery" class="gallery">
         <h2 class="gallery__header"><strong class="black-text">фото</strong><strong class="red-text">галерея</strong></h2>
         <div class="gallery__rectangle"></div>
         <div class="gallery__container">
@@ -120,38 +120,114 @@
             </div>
         </div>
     </section>
-    <section class="join">
-        <div class="container">
-            <h2 class="join__header"><strong class="red-text">принять </strong><strong class="black-text">участие</strong></h2>
-            <form action="" class="join__form">
-                <div class="form__group">
-                    <label for="name" class="form__label">Ваши имя и фамилия</label>
-                    <input type="text" class="form__input" placeholder="елизавета немирович-данченко">
-                </div>
-                <div class="form__group">
-                    <label for="company" class="form__label">Компания</label>
-                    <input type="text" class="form__input" placeholder="oggetto">
-                </div>
-                <div class="form__group">
-                    <label for="email" class="form__label">E-mail</label>
-                    <input type="email" class="form__input" placeholder="example@example.ru">
-                </div>
-                <div class="form__group">
-                    <label for="phone" class="form__group">Телефон</label>
-                    <input type="number" class="form__input" placeholder="+12345678910">
-                </div>
-                <div class="form__group">
-                    <button type="submit" class="form__button">зарегистрироваться</button>
-                </div>
-            </form>
+    <!--<section class="join">
+        <div class="container-flex">
+            <div class="container">
+                <h2 class="join__header"><strong class="red-text">принять </strong><strong class="black-text">участие</strong></h2>
+                <form action="" class="join__form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Ваши имя и фамилия</label>
+                        <input type="text" class="form__input" placeholder="елизавета немирович-данченко">
+                    </div>
+                    <div class="form__group">
+                        <label for="company" class="form__label">Компания</label>
+                        <input type="text" class="form__input" placeholder="oggetto">
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="email" class="form__input" placeholder="example@example.ru">
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="form__group">Телефон</label>
+                        <input type="number" class="form__input" placeholder="+12345678910">
+                    </div>
+                    <div class="form__group">
+                        <button type="submit" class="form__button">зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <img src="join-img.png" alt="" class="join__image">
+                <div class="join__rectangle"></div>
+            </div>
         </div>
-        <div class="container">
-            <img src="join-img.png" alt="" class="join__image">
-            <div class="join__rectangle"></div>
+        <footer class="join__footer">
+            <div class="footer__socials">
+                <a href="" class="socials__button socials__twitter"></a>
+                <a href="" class="socials__button socials__linkedin"></a>
+                <a href="" class="socials__button socials__facebook"></a>
+                <a href="" class="socials__button socials__youtube"></a>
+                <a href="" class="socials__button socials__instagram"></a>
+            </div>
+            <div class="footer__contacts">
+                <img src="" alt="" class="contacts__logo">
+                <a href="" class="contacts__link">Пользовательское соглашение</a>
+                <a href="" class="contacts__link">Персональные данные</a>
+                <a href="" class="contacts__link">Партнёрам</a>
+                <a href="" class="contacts__link red-text">sale@designconference.ru</a>
+                <a href="" class="contacts__link">+7 (977) 490-66-67</a>
+            </div>
+        </footer>
+    </section>-->
+    <section id="join" class="join">
+        <div class="join__container-flex">
+            <div class="join__container">
+                <h2 class="join__header"><strong class="black-text">принять</strong><strong class="red-text">участие</strong></h2>
+                <form action="" class="join__form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Ваши имя и фамилия</label>
+                        <input name="name" type="text" class="form__input" placeholder="елизавета немирович-данченко">
+                    </div>
+                    <div class="form__group">
+                        <label for="company" class="form__label">Компания</label>
+                        <input name="company" type="text" class="form__input" placeholder="OGGETTO">
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input name="email" type="email" class="form__input" placeholder="example@example.ru">
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Телефон</label>
+                        <input name="phone" type="tel" class="form__input" placeholder="+12345678910">
+                    </div>
+                    <div class="form__group">
+                        <button type="submit" class="form__button">зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+            <div class="join__container">
+                <div class="join__picture">
+                    <img src="join-img.png" alt="" class="join__image">  
+                </div>    
+            </div>
+        </div>
+        <div class="join__footer">
+            <div class="footer__socials">
+                <div class="socials__link">
+                    <img src="twitter.svg" alt="">
+                </div>
+                <div class="socials__link">
+                    <img src="linkedin.svg" alt="">
+                </div>
+                <div class="socials__link">
+                    <img src="facebook.svg" alt="">
+                </div>
+                <div class="socials__link">
+                    <img src="youtube.svg" alt="">
+                </div>
+                <div class="socials__link">
+                    <img src="instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <img src="logo.svg" alt="" class="contacts__logo">
+                <a href="" class="contacts__link contacts__link-group1 white-text">Пользовательское соглашение</a>
+                <a href="" class="contacts__link contacts__link-group1 white-text">Персональные данные</a>
+                <a href="" class="contacts__link contacts__link-group1 white-text">Партнёрам</a>
+                <a href="" class="contacts__link contacts__link-group2 red-text white-text">sale@designconference.ru</a>
+                <a href="" class="contacts__link contacts__link-group2 white-text">+7 (977) 490-66-67</a>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        
-    </footer>
 </body>
 </html>

@@ -91,6 +91,30 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/assets/img/gallery-img6.png'),
                     to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/join-img.png'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/twitter.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/facebook.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/linkedin.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/youtube.svg'),
+                    to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/assets/img/instagram.svg'),
+                    to: path.resolve(__dirname, 'dist')
                 }
             ]
         })
