@@ -81,6 +81,7 @@ if ($('.slider__photo').css("width") === "245px") {
 if (window.screen.width < 1024) {
     $(".join__container")[1].style.display = "none";
     $('.contacts__logo')[0].style.display = "none";
+    $(".menu__ancor-border").html("участвовать");
 }
 
 

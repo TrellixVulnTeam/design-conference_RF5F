@@ -3,6 +3,9 @@
 @import '~slick-carousel/slick/slick';
 @import '~slick-carousel/slick/slick-theme';
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     overflow-x: hidden;
 }
@@ -91,7 +94,7 @@ a:active {
         display: flex;
         flex-direction: row;
         padding: 44px 46px 0 41px;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         align-items: center;
         width: inherit;
         margin-bottom: 93px; 
@@ -110,6 +113,9 @@ a:active {
         margin-right: 30px;
         &:last-of-type {
             margin-right: 0px;
+        }
+        &:nth-of-type(5) {
+            margin-right: 319px;
         }
     }
 
@@ -219,6 +225,9 @@ a:active {
 /** ABOUT **/
 
 .about {
+    .container {
+        overflow-x: hidden;
+    }
     width: 100vw;
     padding-top: 80px;
     &__experience {
@@ -386,11 +395,10 @@ a:active {
         width: 297px;
     }
     &__picture {
-        width: 845px;
+        width: 884px;
         height: 302px;
         float: right;
         border: 6px solid #DA353B;
-        border-right: 6px solid #ffffff;
     }
     &__image {
         position: relative;
@@ -682,7 +690,7 @@ a:active {
         top: 20px;
     }
     &__footer {
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/img/logo.svg');
+        background-image: url('../assets/img/footer-bg-dark.png');
         background-size: cover;
         background-repeat: no-repeat;
         width: 100vw;
@@ -871,6 +879,7 @@ a:active {
             width: 347px;
             padding: 17px 0 0 14px;
             margin-bottom: 30px;
+            height: 153px;
         }
         &__container {
             width: 311px;
@@ -892,7 +901,17 @@ a:active {
             font-size: 1rem;
             text-transform: uppercase;
             &-border {
-                display: none;
+                font-family: 'Helvetica Medium'!important;
+                height: 74px!important;
+                padding-top: 34px!important;
+                text-transform: lowercase;
+                position: relative;
+                left: 125px;
+                top: -193px;
+                margin-bottom: -193px;
+                align-items: unset;
+                background-color: #DA353B;
+                border: none;
             }
         }
     }
