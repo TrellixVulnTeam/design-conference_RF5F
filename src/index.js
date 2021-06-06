@@ -31,6 +31,15 @@ $(document).ready(function() {
             slidesToShow: 3
         })
     }
+    if (window.screen.width <= 1290) {
+        $('.gallery__slider').slick({
+            variableWidth: true,
+            infinite: true,
+            arrows: true,
+            centerMode: true,
+            slidesToShow: 4
+        })
+    }
 })
 
 console.log(window.screen.height);

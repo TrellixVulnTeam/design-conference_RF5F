@@ -910,7 +910,92 @@ a:active {
     }
 }
 
-/** 1028px **/
+/** 1280px **/
+
+@media all and (max-width: 1290px) {
+    .welcome {
+        padding: 0;
+        &__filter {
+            width: auto;
+            margin: 0;
+        }
+        &__menu {
+            width: 1210px;
+            padding: 20px 40px 0px 40px;
+        }
+    }
+    .menu {
+        margin-bottom: 80px;
+        &__anchor {
+            &:nth-of-type(5) {
+                margin-right: 190px;
+            }
+
+        }
+    }
+    .event {
+        &__header {
+            font-size: 4.5rem;
+        }
+        &__info {
+            left: 480px;
+        }
+    }
+    .programm {
+        &__filter {
+            width: 1180px;
+        }
+        &__rectangle {
+            width: 1070px;
+        }
+    }
+    .slick {
+        &-prev {
+            left: 1100px;
+        }
+        &-next {
+            left: 1160px;
+        }
+    }
+
+    .footer {
+        &__socials {
+            margin: 0;
+            justify-content: space-evenly;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        &__contacts {
+            padding-left: 70px;
+            padding-right: 0;
+        }
+    }
+    .socials {
+        &__link {
+            &::after {
+                left: 75px;
+                margin-left: 0;
+            }
+        }
+    }
+    .contacts {
+        &__logo {
+            margin-right: 50px;
+        }
+        &__link {
+            &-group1 {
+                &:nth-of-type(3) {
+                    margin-right: 80px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/** 1024px **/
 
 @media all and (max-width: 1028px) {
     .welcome {
@@ -1089,7 +1174,7 @@ a:active {
     }
 }
 
-/** DELETE RECTANGLE WHEN VW < 1024 **/
+/** PROGRAMM RECTANGLE WHEN VW < 1024 **/
 @media all and (max-width: 1023px) {
     .programm {
         &__rectangle {
