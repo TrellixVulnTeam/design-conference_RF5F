@@ -295,6 +295,7 @@ a:active {
 }
 /** WELCOME **/
 .welcome {
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,6 +305,14 @@ a:active {
   width: 100vw;
   height: 645px;
   color: #ffffff;
+}
+.welcome__rectangle {
+  width: 113px;
+  height: 45px;
+  position: absolute;
+  top: 0px;
+  left: 277px;
+  background-color: #DA353B;
 }
 .welcome__filter {
   width: 1347px;
@@ -325,13 +334,23 @@ a:active {
 .welcome__event {
   padding-left: 121px;
 }
-.menu__ancor {
+@media all and (max-width: 1920px) {
+  .welcome__rectangle {
+    left: 325px;
+  }
+}
+@media all and (max-width: 1440px) {
+  .welcome__rectangle {
+    left: 277px;
+  }
+}
+.menu__anchor {
   margin-right: 30px;
 }
-.menu__ancor:last-of-type {
+.menu__anchor:last-of-type {
   margin-right: 0px;
 }
-.menu__ancor:nth-of-type(5) {
+.menu__anchor:nth-of-type(5) {
   margin-right: 319px;
 }
 .menu__logo {
@@ -356,7 +375,7 @@ a:active {
   line-height: 26px;
   margin-top: 4px;
 }
-.event__ancor {
+.event__anchor {
   margin-top: 28px;
 }
 .event__info {
@@ -365,7 +384,7 @@ a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  left: 628px;
+  left: 629px;
   width: 500px;
   height: 103px;
   margin-right: 0;
@@ -378,10 +397,10 @@ a:active {
 }
 @media all and (max-width: 1440px) {
   .event__info {
-    left: 628px;
+    left: 629px;
   }
 }
-.ancor {
+.anchor {
   display: inline-block;
   font-size: 1rem;
   font-family: 'Helvetica Medium';
@@ -389,7 +408,7 @@ a:active {
         font-family: 'Helvetica Light';
     }*/
 }
-.ancor-border {
+.anchor-border {
   font-size: 0.875rem;
   display: inline-flex;
   justify-content: center;
@@ -402,7 +421,7 @@ a:active {
   background-position: right bottom;
   transition: all 0.5s ease-out;
 }
-.ancor-border:hover {
+.anchor-border:hover {
   background-position: left bottom;
   border-color: #DA353B;
 }
@@ -631,7 +650,7 @@ a:active {
   justify-content: center;
   align-items: center;
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 95px;
   background-image: url(be037483a0fed03d6e8bace3aa38d100.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -679,12 +698,14 @@ a:active {
 }
 @media all and (max-width: 1920px) {
   .programm__rectangle {
-    left: 208px;
+    left: 158px;
+    width: 1223px;
   }
 }
 @media all and (max-width: 1440px) {
   .programm__rectangle {
     left: 160px;
+    width: 1190px;
   }
 }
 .performance__time {
@@ -741,6 +762,22 @@ a:active {
   width: 220px;
   height: 220px;
   border: 6px solid #DA353B;
+}
+@media all and (max-width: 1920px) {
+  .gallery__rectangle {
+    left: 138px;
+  }
+  .gallery__header {
+    margin-left: 217px;
+  }
+}
+@media all and (max-width: 1440px) {
+  .gallery__rectangle {
+    left: 92px;
+  }
+  .gallery__header {
+    margin-left: 170px;
+  }
 }
 /** SLIDER **/
 .slider__photo {
@@ -976,6 +1013,165 @@ a:active {
     left: 49px;
   }
 }
+/** 1028px **/
+@media all and (max-width: 1028px) {
+  .welcome {
+    width: 100vw;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .welcome__filter {
+    width: 978px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .welcome__menu {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .welcome__event {
+    padding-left: 100px;
+  }
+  .menu__anchor {
+    margin-right: 15px;
+  }
+  .menu__anchor:nth-of-type(5) {
+    margin-right: 70px;
+  }
+  .anchor {
+    font-family: 'Helvetica Light';
+  }
+  .event__header {
+    font-size: 4.125rem;
+  }
+  .event__info {
+    left: 257px;
+  }
+  .about {
+    padding-top: 50px;
+  }
+  .about__experience {
+    margin-left: 128px;
+  }
+  .about__silent {
+    height: 370px;
+  }
+  .experience__rectangle {
+    width: 168px;
+    height: 168px;
+    left: -47px;
+    top: -60px;
+    margin-bottom: -60px;
+    border: 5px solid #DA353B;
+  }
+  .experience__header {
+    font-size: 2.55rem;
+  }
+  .experience__paragraph {
+    margin-top: 40px;
+    font-size: 1.3rem;
+  }
+  .silent__image {
+    width: 565px;
+    height: 370px;
+    object-fit: cover;
+  }
+  .silent__filter {
+    width: 330px;
+    left: 235px;
+  }
+  .silent__filter::after {
+    left: 330px;
+    width: 15px;
+  }
+  .earn__text {
+    margin-left: 128px;
+  }
+  .earn .image {
+    width: 540px;
+    object-fit: cover;
+  }
+  .earn__filter {
+    left: 220px;
+    width: 120px;
+  }
+  .programm {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .programm__filter {
+    width: 974px;
+  }
+  .programm__rectangle {
+    width: 774px;
+    left: 224px;
+  }
+  .programm__header {
+    font-size: 2.75rem;
+    left: -90px;
+  }
+  .programm__list {
+    padding-left: 133px;
+  }
+  .gallery {
+    padding-top: 50px;
+    height: 625px;
+  }
+  .gallery__header {
+    margin-left: 155px;
+  }
+  .gallery__rectangle {
+    width: 168px;
+    height: 168px;
+    bottom: 180px;
+    margin-bottom: -180px;
+    left: 127px;
+  }
+  .gallery__container {
+    margin-top: 50px;
+  }
+  .footer__socials {
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-evenly;
+  }
+  .footer__contacts {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-around;
+  }
+  .socials__link::after {
+    left: 90px;
+    margin-right: 0!important;
+  }
+  .contacts__logo {
+    display: none;
+  }
+  .contacts__link-group1 {
+    margin-right: 0;
+  }
+  .contacts__link-group1:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .contacts__link-group2 {
+    margin-right: 0;
+  }
+  .contacts__link-group2:last-of-type {
+    margin-right: 0;
+  }
+}
+/** DELETE RECTANGLE WHEN VW < 1024 **/
+@media all and (max-width: 1023px) {
+  .programm__rectangle {
+    left: 0px;
+    width: 100%;
+  }
+  .programm__header {
+    left: 0px;
+  }
+}
 /** MOBILE **/
 @media (max-width: 375.2px) {
   .white-text-mobile {
@@ -1011,13 +1207,13 @@ a:active {
     margin-bottom: 26px;
     margin-left: 10px;
   }
-  .menu__ancor {
+  .menu__anchor {
     margin-left: 10px;
     margin-bottom: 10px;
     font-size: 1rem;
     text-transform: uppercase;
   }
-  .menu__ancor-border {
+  .menu__anchor-border {
     font-family: 'Helvetica Medium' !important;
     height: 74px!important;
     padding-top: 34px!important;
@@ -1060,7 +1256,7 @@ a:active {
     bottom: 110px;
     left: 150px;
   }
-  .ancor-border {
+  .anchor-border {
     font-size: 1.125rem;
     font-family: 'Helvetica Light';
     width: 173px;

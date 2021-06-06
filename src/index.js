@@ -22,6 +22,15 @@ $(document).ready(function() {
             slidesToShow: 1,
         })
     }
+    if (window.screen.width <= 1028) {
+        $('.gallery__slider').slick({
+            variableWidth: true,
+            infinite: true,
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+        })
+    }
 })
 
 console.log(window.screen.height);
@@ -80,11 +89,13 @@ if ($('.slider__photo').css("width") === "245px") {
 
 if (window.screen.width < 1024) {
     $(".join__container")[1].style.display = "none";
-    $('.contacts__logo')[0].style.display = "none";
+    $(".contacts__logo")[0].style.display = "none";
     $(".menu__ancor-border").html("участвовать");
 }
 
-
+if (window.screen.width < 1280) {
+    $(".join__container")[1].style.display = "none";
+}
 /*if (window.screen.width >= 1440) {
     let socialLinks = $('.socials__link');
     socialLinks[0].style.height = "20px";
