@@ -4,26 +4,33 @@ import 'slick-carousel';
 import './styles/styles.less';
 import './styles/scss.scss';
 
+/** SLICK INIT **/
 
 $(document).ready(function() {
-    if (window.screen.width >= 1440) {
-        $('.gallery__slider').slick({
+    let slider = $('.gallery__slider');
+    let userWidth = window.screen.width;
+
+    if (userWidth >= 1440 && !slider.hasClass('slick-initialized')) {
+        slider.slick({
             variableWidth: true,
             infinite: true,
             arrows: true,
             slidesToShow: 4
         })
     }
-    if (window.screen.width <= 380) {
-        $('.gallery__slider').slick({
+
+    if (userWidth < 1440 && userWidth >= 1280 && !slider.hasClass('slick-initialized')) {
+        slider.slick({
+            variableWidth: true,
             infinite: true,
-            arrows: false,
+            arrows: true,
             centerMode: true,
-            slidesToShow: 1,
+            slidesToShow: 4
         })
     }
-    if (window.screen.width <= 1028) {
-        $('.gallery__slider').slick({
+
+    if (userWidth < 1280 && userWidth >= 1024 && !slider.hasClass('slicker-initialized')) {
+        slider.slick({
             variableWidth: true,
             infinite: true,
             arrows: false,
@@ -31,20 +38,18 @@ $(document).ready(function() {
             slidesToShow: 3
         })
     }
-    if (window.screen.width <= 1290) {
-        $('.gallery__slider').slick({
-            variableWidth: true,
+    if (userWidth < 1024 && !slider.hasClass('slick-initialized')) {
+        slider.slick({
             infinite: true,
-            arrows: true,
+            arrows: false,
             centerMode: true,
-            slidesToShow: 4
+            slidesToShow: 1,
         })
     }
+
 })
 
-console.log(window.screen.height);
-console.log(window.screen.width);
-
+/** ADD FILTERS TO SLIDER PHOTOS */
 
 if ($('.slider__photo').css("width") === "380px") {
     let filters = $('.slider__filter');
@@ -105,6 +110,7 @@ if (window.screen.width < 1024) {
 if (window.screen.width < 1280) {
     $(".join__container")[1].style.display = "none";
 }
+
 /*if (window.screen.width >= 1440) {
     let socialLinks = $('.socials__link');
     socialLinks[0].style.height = "20px";

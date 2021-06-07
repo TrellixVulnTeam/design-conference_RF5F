@@ -1003,6 +1003,10 @@ a:active {
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
+        &__rectangle {
+            height: 20px;
+            left: 228px;
+        }
         &__filter {
             width: 978px;
             height: auto;
@@ -1148,7 +1152,7 @@ a:active {
     .socials {
         &__link {
             &::after {
-                left: 90px;
+                left: 55px;
                 margin-right: 0!important;
             }
         }
@@ -1174,7 +1178,7 @@ a:active {
     }
 }
 
-/** PROGRAMM RECTANGLE WHEN VW < 1024 **/
+/** PROGRAMM RECTANGLE WHEN VW < 1024
 @media all and (max-width: 1023px) {
     .programm {
         &__rectangle {
@@ -1185,7 +1189,7 @@ a:active {
             left: 0px;
         }
     }
-} 
+} **/
 
 /** MOBILE **/
 
@@ -1216,6 +1220,9 @@ a:active {
         }
         &__event {
             padding-left: 24px;
+        }
+        &__rectangle {
+            display: none;
         }
     }
     .menu {
@@ -1432,7 +1439,7 @@ a:active {
             overflow: hidden;
         }
         &__rectangle {
-            display: inline-block;
+            display: inline-flex;
             width: 273px;
             height: 80px;
             top: 0;
@@ -1441,8 +1448,9 @@ a:active {
             margin-bottom: 0;
         }
         &__header {
+            position: relative;
             font-size: 2.75rem;
-            right: 72px;
+            left: -73px;
         }
         &__list {
             padding-left: 0;
@@ -1464,6 +1472,9 @@ a:active {
             width: 324px;
             padding-left: 3px;
         }
+        &__speaker {
+            padding-left: 3px;
+        } 
     }
 
 
@@ -1484,7 +1495,7 @@ a:active {
         &__rectangle {
             display: inline-block;
             bottom: 247px;
-            left: 116px;
+            left: 117px;
             margin-right: -116px;
             margin-top: -247px;
             width: 143px;
@@ -1551,6 +1562,8 @@ a:active {
 
     .footer {
         &__socials {
+            padding-left: 0;
+            padding-right: 0;
             margin-left: 0;
             width: 100%;
             justify-content: space-around;
@@ -1561,6 +1574,14 @@ a:active {
             align-items: unset;
             padding: 0;
             padding-left: 28px;
+        }
+    }
+
+    .socials {
+        &__link {
+            &::after {
+                left: 50px;
+            }
         }
     }
 

@@ -1079,6 +1079,10 @@ a:active {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .welcome__rectangle {
+    height: 20px;
+    left: 228px;
+  }
   .welcome__filter {
     width: 978px;
     height: auto;
@@ -1201,7 +1205,7 @@ a:active {
     justify-content: space-around;
   }
   .socials__link::after {
-    left: 90px;
+    left: 55px;
     margin-right: 0!important;
   }
   .contacts__logo {
@@ -1220,16 +1224,18 @@ a:active {
     margin-right: 0;
   }
 }
-/** PROGRAMM RECTANGLE WHEN VW < 1024 **/
+/** PROGRAMM RECTANGLE WHEN VW < 1024
 @media all and (max-width: 1023px) {
-  .programm__rectangle {
-    left: 0px;
-    width: 100%;
-  }
-  .programm__header {
-    left: 0px;
-  }
-}
+    .programm {
+        &__rectangle {
+            left: 0px;
+            width: 100%;
+        }
+        &__header {
+            left: 0px;
+        }
+    }
+} **/
 /** MOBILE **/
 @media (max-width: 375.2px) {
   .white-text-mobile {
@@ -1258,6 +1264,9 @@ a:active {
   }
   .welcome__event {
     padding-left: 24px;
+  }
+  .welcome__rectangle {
+    display: none;
   }
   .menu__logo {
     width: 91px;
@@ -1457,7 +1466,7 @@ a:active {
     overflow: hidden;
   }
   .programm__rectangle {
-    display: inline-block;
+    display: inline-flex;
     width: 273px;
     height: 80px;
     top: 0;
@@ -1466,8 +1475,9 @@ a:active {
     margin-bottom: 0;
   }
   .programm__header {
+    position: relative;
     font-size: 2.75rem;
-    right: 72px;
+    left: -73px;
   }
   .programm__list {
     padding-left: 0;
@@ -1487,6 +1497,9 @@ a:active {
     width: 324px;
     padding-left: 3px;
   }
+  .performance__speaker {
+    padding-left: 3px;
+  }
   /** GALLERY **/
   .gallery {
     width: 375px;
@@ -1504,7 +1517,7 @@ a:active {
   .gallery__rectangle {
     display: inline-block;
     bottom: 247px;
-    left: 116px;
+    left: 117px;
     margin-right: -116px;
     margin-top: -247px;
     width: 143px;
@@ -1557,6 +1570,8 @@ a:active {
     width: 347px;
   }
   .footer__socials {
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 0;
     width: 100%;
     justify-content: space-around;
@@ -1567,6 +1582,9 @@ a:active {
     align-items: unset;
     padding: 0;
     padding-left: 28px;
+  }
+  .socials__link::after {
+    left: 50px;
   }
   .contacts__link-group1 {
     margin-bottom: 15px;
