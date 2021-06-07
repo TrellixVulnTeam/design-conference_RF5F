@@ -384,7 +384,7 @@ a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  left: 629px;
+  left: 633px;
   width: 500px;
   height: 103px;
   margin-right: 0;
@@ -397,7 +397,7 @@ a:active {
 }
 @media all and (max-width: 1440px) {
   .event__info {
-    left: 629px;
+    left: 633px;
   }
 }
 .anchor {
@@ -1036,7 +1036,7 @@ a:active {
     font-size: 4.5rem;
   }
   .event__info {
-    left: 480px;
+    left: 484px;
   }
   .programm__filter {
     width: 1180px;
@@ -1108,7 +1108,7 @@ a:active {
     font-size: 4.125rem;
   }
   .event__info {
-    left: 257px;
+    left: 262px;
   }
   .about {
     padding-top: 50px;
@@ -1523,6 +1523,7 @@ a:active {
     margin-left: 28px;
     margin-right: 0;
     width: 303px;
+    height: 275px;
     position: relative;
     z-index: 2;
     top: 9px;
@@ -1596,10 +1597,10 @@ a:active {
   }
   .gallery__rectangle {
     display: inline-block;
-    bottom: 247px;
+    bottom: 210px;
     left: 117px;
     margin-right: -116px;
-    margin-top: -247px;
+    margin-top: -210px;
     width: 143px;
     height: 143px;
     border: 3px solid #DA353B;
