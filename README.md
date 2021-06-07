@@ -1,6 +1,6 @@
 ## Design Conferense web page
 #### _WHEN RESIZING YOUR BROWSER RELOAD THE PAGE IN ORDER FOR SLIDER AND SOME IMAGES TO RESIZE_
-##### dev code is in _src_ folder, final minimiez code is in _dist_  
+##### dev code is in _src_ folder, final minimized code is in _dist_  
 host: https://vlresht.github.io/design-conference-host/
 
 * Tested on
