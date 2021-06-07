@@ -29,7 +29,7 @@ $(document).ready(function() {
         })
     }
 
-    if (userWidth < 1280 && userWidth >= 1024 && !slider.hasClass('slicker-initialized')) {
+    if (userWidth < 1280 && userWidth >= 1024 && !slider.hasClass('slick-initialized')) {
         slider.slick({
             variableWidth: true,
             infinite: true,
@@ -38,7 +38,18 @@ $(document).ready(function() {
             slidesToShow: 3
         })
     }
-    if (userWidth < 1024 && !slider.hasClass('slick-initialized')) {
+
+    if (userWidth < 1024 && userWidth >= 768 && !slider.hasClass('slick-initialized')) {
+        slider.slick({
+            variableWidth: true,
+            infinite: true,
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3
+        })
+    }
+
+    if (userWidth < 768 && !slider.hasClass('slick-initialized')) {
         slider.slick({
             infinite: true,
             arrows: false,
@@ -110,16 +121,6 @@ if (window.screen.width < 1024) {
 if (window.screen.width < 1280) {
     $(".join__container")[1].style.display = "none";
 }
-
-/*if (window.screen.width >= 1440) {
-    let socialLinks = $('.socials__link');
-    socialLinks[0].style.height = "20px";
-    socialLinks[3].style.height = "17px";
-
-    let socialSvgs = $('.socials__svg');
-    socialSvgs[0].style.height = "20px";
-    socialSvgs[3].style.height = "17px";
-}*/
 
 let socialLinks = $('.socials__link');
 socialLinks[0].style.height = "20px";

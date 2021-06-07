@@ -1236,6 +1236,84 @@ a:active {
         }
     }
 } **/
+/** 768px **/
+@media all and (max-width: 768px) {
+  .welcome {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .welcome__rectangle {
+    left: 165px;
+  }
+  .welcome__menu {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+  }
+  .menu__logo {
+    width: 91px;
+    height: 23px;
+  }
+  .menu__anchor:nth-of-type(5) {
+    margin-right: 20px;
+  }
+  .menu__anchor-border {
+    display: none;
+  }
+  .event__info {
+    left: 140px;
+    top: 20px;
+    margin-bottom: -20px;
+  }
+  .silent__image {
+    width: 395px;
+    height: 340px;
+  }
+  .silent__filter {
+    width: 170px;
+    left: 225px;
+  }
+  .silent__filter::after {
+    left: 170px;
+    width: 9px;
+  }
+  .silent__text {
+    margin-left: 50px;
+  }
+  .earn__text {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  .earn__image {
+    object-fit: cover;
+    width: 545px;
+  }
+  .programm__filter {
+    width: 700px;
+  }
+  .programm__list {
+    padding-left: 70px;
+  }
+  .programm__rectangle {
+    left: 158px;
+    margin-bottom: 35px;
+    width: 576px;
+  }
+  .programm__performance::after {
+    width: 630px;
+  }
+  .join__footer {
+    justify-content: space-evenly;
+  }
+  .footer__socials {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .contacts__link {
+    font-size: 0.85rem;
+  }
+}
 /** MOBILE **/
 @media (max-width: 375.2px) {
   .white-text-mobile {
@@ -1281,6 +1359,7 @@ a:active {
     text-transform: uppercase;
   }
   .menu__anchor-border {
+    display: inline-flex;
     font-family: 'Helvetica Medium' !important;
     height: 74px!important;
     padding-top: 34px!important;
@@ -1306,6 +1385,7 @@ a:active {
     width: 297px;
     height: 103px;
     left: 40px;
+    top: 0px;
   }
   .event__info .container {
     margin-top: 26px;
@@ -1358,7 +1438,7 @@ a:active {
     width: 143px;
     height: 143px;
     left: 89px;
-    top: -110px;
+    top: -70px;
     margin-top: -110px;
     border: 3px solid #DA353B;
     overflow-x: hidden;
@@ -1523,6 +1603,9 @@ a:active {
     width: 143px;
     height: 143px;
     border: 3px solid #DA353B;
+  }
+  .gallery__container {
+    margin-top: 0px;
   }
   .slider__photo {
     width: 245px;
