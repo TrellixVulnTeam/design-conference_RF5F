@@ -1,6 +1,8 @@
 ## Design Conferense web page
 #### _WHEN RESIZING YOUR BROWSER RELOAD THE PAGE IN ORDER FOR SLIDER AND SOME IMAGES TO RESIZE_
 
+host: https://vlresht.github.io/design-conference-host/
+
 * Tested on
 1. Chrome
 2. Firefox (some red rectangles are off 3-5 pixels)
